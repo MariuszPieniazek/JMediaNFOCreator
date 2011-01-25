@@ -1,0 +1,122 @@
+[GENERAL]
+0001=Language:
+0002=Français
+0003=Author:
+0004=T.Barbey
+0005=Version:
+0006=1.0
+0007=To adapt MNB to another language only the *.lng file in directory LANG has to be translated. For a native speaker of the language this will take 15-30 minutes. If you want to help me, I will be happy :) Sorry for my english. Correct my bugs, please.
+
+[MENU]
+0=&Fichier
+00=&Enregistrer
+02=F&ermer
+1=&Options
+10=&Préferences
+2=&Aide
+20=A &propos...
+
+[TABSHEETS]
+1001=Sélection
+1002=Information
+1003=Ajouts
+1004=Prévisualisation
+2001=Géneral
+2002=Langue
+
+[LISTVIEW]
+3001=Fichier
+3002=Auteur
+3003=Titre
+3004=Album
+3005=Durée
+3006=Durée totale
+3007=Bitrate
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Selection Disque et répertoire
+4002=Selection type de fichier
+4003=Liste Fichiers
+4004=Informations additionnelles
+4005=Langue
+4006=Informations additionnelles
+4007=Annotations
+4008=Pub :)
+4009=Fichier joint
+4010=Jaquette
+4011=Repost Policy
+
+[BUTTONS]
+5001=Suivant >
+5002=Suivant >
+5003=OK
+5004=Annuler
+5005=Voir NFO
+5006=Selection langue
+5007=OK
+5008=Sauver NFO
+
+[LABELS]
+6001=Version:
+6002=Hz:
+6003=Canaux:
+6004=Encodeur:
+6005=Bitrate Moyen:
+6006=Qualité:
+6007=Temps total:
+6008=Total size:
+6009=Année:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Langue sélectionnée
+6014=Genre:
+6015=Source:
+6016=Ripper:
+6017=CD/DVD model:
+6018=Rippé par:
+6019=Date de ripp:
+6020=Posté par:
+6021=Date d'envoi:
+6022=Information:
+6023=News server:
+6024=Group:
+6025=Nom de fichier:
+6026=Répertoire par défaut:
+6027=Groupe sélectionné:
+6028=Write anything you want... ;)
+
+[CHECKBOXES]
+7001=Ajouter une annotation
+7002=Ajouter une 'pub'
+7003=Checksums (*.sfv/*.md5)
+7004=Playlist (*.pls)
+7005=Playlist (*.m3u)
+7006=Avant
+7007=Arrière
+7008=CD
+7009=XP style menu
+7010=Générer un checksum
+7011=Various Artists
+7012=NMR (Not My Rip)
+7013=Add bitrate to every file
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Options
+8002=A propos
+8003=Patientez SVP...
+
+[TEXTS]
+9001=NFO not saved!
+9002=NFO saved!
+9003=NFO/M3U/PLS/SFV/MD5 succesfully saved!
+9004=Congratulations!
+9005=NFO not complete!
+9006=WARNING
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]

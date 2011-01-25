@@ -1,0 +1,118 @@
+[GENERAL]
+0001=Idioma:
+0002=Portugues
+0003=Author:
+0004=Cerberus
+0005=Verção:
+0006=1.0
+0007=Para adaptar o MNB para outra lingua somente o arquivo *.lng no diretorio LANG devera ser traduzido. Modifique como achar melhor
+[MENU]
+0=&Arquivo
+00=&Salvar
+02=&Sair
+1=&Opções
+10=&Preferencias
+2=&Ajuda
+20=&Sobre...
+
+[TABSHEETS]
+1001=Seleção
+1002=Informação
+1003=Adicionais
+1004=Visualizar
+2001=Geral
+2002=Idioma
+[LISTVIEW]
+3001=Arquivo
+3002=Autor
+3003=Titulo
+3004=Album
+3005=Tamanho
+3006=Duração
+3007=Taxa de BIts
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Selecionar Disco e Diretório
+4002=Selecionar tipo de Arquivo
+4003=Lista de Arquivos
+4004=Informação Adicional
+4005=Idioma
+4006=Informação Adicional
+4007=Notas
+4008=Ads :)
+4009=Arquivos Anexados
+4010=Capas
+
+[BUTTONS]
+5001=Próximo >
+5002=Próximo >
+5003=OK
+5004=Cancelar
+5005=Ver NFO
+5006=Escolher idioma
+5007=OK
+5008=Salvar NFO
+
+[LABELS]
+6001=Versão:
+6002=Hz:
+6003=Canais:
+6004=Codificador:
+6005=Average bitrate:
+6006=Qualidade:
+6007=Tempo Total:
+6008=Tamanho Total:
+6009=Ano:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Idioma escolhido
+6014=Genre:
+6015=Origem:
+6016=Extrator:
+6017=Modelo CD/DVD:
+6018=Extraido por:
+6019=Data da Extração:
+6020=Afixado por:
+6021=Data de afixação:
+6022=Informação:
+6023=Servidor de News:
+6024=Grupo:
+6025=Filenames:
+6026=Diretório Base:
+6027=Grupos Escolhidos:
+
+[CHECKBOXES]
+7001=Adicionar Notas
+7002=Add ads
+7003=Checksums (*.sfv/*.md5)
+7004=Playlist (*.pls)
+7005=Playlist (*.m3u)
+7006=Frente
+7007=Costa
+7008=CD
+7009=Menu estilo XP
+7010=Gerar checksums
+7011=Various Artists
+7012=NME (Não é Minha Extração)
+7013=Adicionar taxa de bits para cada arquivo
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Opções
+8002=Sobre
+8003=Favor aguardar...
+
+[TEXTS]
+9001=NFO nao foi salvo!
+9002=NFO salvo!
+9003=NFO/M3U/PLS/SFV/MD5 salvo com sucesso!
+9004=Parabéns!
+9005=NFO incompleto!
+9006=ATENÇAO
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]

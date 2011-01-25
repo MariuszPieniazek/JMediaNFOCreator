@@ -1,0 +1,122 @@
+[GENERAL]
+0001=JÍzyk:
+0002=Polski
+0003=Autor:
+0004=Pawel Piecuch
+0005=Wersja:
+0006=1.20
+0007=Aby adaptowaÊ MNB do innej wersji jÍzykowej wystarczy przet≥umaczyÊ plik *.lng z katalogu LANG. Ta operacja zajmie tylko parÍnaúcie minut. Jeøeli mi pomoøesz - bedÍ bardzo szczÍúliwy :)
+
+[MENU]
+0=&Plik
+00=&Zapisz
+02=&Wyjúcie
+1=&Opcje
+10=&Ustawienia
+2=&Pomoc
+20=&O programie...
+
+[TABSHEETS]
+1001=WybÛr
+1002=Informacje
+1003=Dodatki
+1004=Podglπd
+2001=OgÛlne
+2002=JÍzyk
+
+[LISTVIEW]
+3001=Plik
+3002=Autor
+3003=Tytu≥
+3004=Album
+3005=D≥ugoúÊ
+3006=Czas
+3007=Bitrate
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Wybierz dysk i katalog
+4002=Wybierz rodzaj plikÛw
+4003=Lista plikÛw
+4004=Pozosta≥e informacje
+4005=JÍzyk
+4006=Dodatkowe Informacje
+4007=Notatka
+4008=Reklama :)
+4009=Do≥πcz pliki
+4010=Ok≥adki
+4011=Warunki repostu
+
+[BUTTONS]
+5001=Dalej >
+5002=Dalej >
+5003=OK
+5004=Anuluj
+5005=Pokaø NFO
+5006=Wybierz jÍzyk
+5007=OK
+5008=Zapisz NFO
+
+[LABELS]
+6001=Wersja:
+6002=Hz:
+6003=Kana≥y:
+6004=Enkoder:
+6005=åredni bitrate:
+6006=JakoúÊ:
+6007=£πczny czas:
+6008=£πczna wielkoúÊ:
+6009=Rok:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Wybrany jÍzyk
+6014=Rodzaj:
+6015=èrÛd≥o:
+6016=Ripper:
+6017=Model CD/DVD:
+6018=Zripowa≥:
+6019=Data ripowania:
+6020=Postujπcy:
+6021=Data postowania:
+6022=Informacja o p≥ycie:
+6023=Serwer news:
+6024=Grupa:
+6025=Nazwy plikÛw:
+6026=Domyúlny katalog:
+6027=Wybrane grupy:
+6028=Daj upust swojej fantazji... ;)
+
+[CHECKBOXES]
+7001=Do≥πcz notatkÍ
+7002=Do≥πcz reklamÍ
+7003=Sumy kontrolne (*.sfv/*.md5)
+7004=Lista utworÛw (*.pls)
+7005=Lista utworÛw (*.m3u)
+7006=PrzÛd
+7007=Ty≥
+7008=CD
+7009=Menu w stylu XP
+7010=Wygeneruj sumy kontrolne
+7011=RÛøni wykonawcy
+7012=NMR (Nie MÛj Rip)
+7013=Dodawaj bitrate do kaødego pliku
+7014=Czytaj podkatalogi
+7015=Zapisz SFV/MD5/M3U/PLS wraz z nazwami plikÛw w Unicode
+
+[FORMS]
+8001=Opcje
+8002=O programie
+8003=ProszÍ czekaÊ...
+
+[TEXTS]
+9001=NFO nie zapisane!
+9002=NFO zapisane!
+9003=NFO/M3U/PLS/SFV/MD5 pomyúlnie zapisane!
+9004=Gratulacje!
+9005=NFO nie gotowe!
+9006=OSTRZEØENIE
+9007=W zadanym katalogu sπ pliki rÛønego rodzaju!
+9008=WczytujÍ rodzaj pliku z najwiÍkszπ iloúciπ plikÛw
+
+[END]

@@ -1,0 +1,123 @@
+[GENERAL]
+0001=Språk:
+0002=Norsk
+0003=Oversetter:
+0004=Espen Farstad
+0005=Versjon:
+0006=1.15
+0007=To adapt MNB to another language only the *.lng file in directory LANG has to be translated. For a native speaker of the language this will take 15-30 minutes. If you want to help me, I will be happy :) Sorry for my english. Correct my bugs, please.
+
+[MENU]
+0=&Fil
+00=&Lagre
+02=&Avslutt
+1=&Alternativer
+10=&Innstillinger
+2=&Hjelp
+20=&Om...
+
+[TABSHEETS]
+1001=Utvalg
+1002=Informasjon
+1003=Tillegg
+1004=Forhåndsvisning
+2001=Generelt
+2002=Språk
+
+[LISTVIEW]
+3001=Fil
+3002=Artist
+3003=Tittel
+3004=Album
+3005=Lengde
+3006=Varighet
+3007=Bitrate
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Velg stasjon og mappe
+4002=Velg filtyper
+4003=Oversikt
+4004=Tilleggsinformasjon
+4005=Språk
+4006=Tilleggsinformasjon
+4007=Notater
+4008=Tillegg :)
+4009=Legg ved filer
+4010=Cover
+4011=Regel for flytting
+
+[BUTTONS]
+5001=Neste >
+5002=Neste >
+5003=OK
+5004=Avbryt
+5005=Vis NFO
+5006=Velg språk
+5007=OK
+5008=Lagre NFO
+
+[LABELS]
+6001=Versjon:
+6002=Hz:
+6003=Kanaler:
+6004=Koding:
+6005=Snitt-bitrate:
+6006=Kvalitet:
+6007=Totaltid:
+6008=Total størelse:
+6009=År:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Velg språk
+6014=Genre:
+6015=Kilde:
+6016=Ripper:
+6017=CD/DVD modell:
+6018=Rippet av:
+6019=Rippdato:
+6020=Levert av:
+6021=Leveringsdato:
+6022=Informasjon:
+6023=Nyhetsserver:
+6024=Gruppe:
+6025=Filnavn:
+6026=Standardmappe:
+6027=Velg grupper:
+6028=Skriv hva som helst... ;)
+
+
+[CHECKBOXES]
+7001=Legg til notat
+7002=Legg til tillegg
+7003=Sjekksummer (*.sfv/*.md5)
+7004=Spilleliste (*.pls)
+7005=Spilleliste (*.m3u)
+7006=Forside
+7007=Bakside
+7008=CD
+7009=XP-stil meny
+7010=Generer sjekksummer
+7011=Various Artists
+7012=Imr (Ikke min ripp)
+7013=Legg til bitrate i hver fil
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Alternativer
+8002=Om
+8003=Vent...
+
+[TEXTS]
+9001=NFO not saved!
+9002=NFO saved!
+9003=NFO/M3U/PLS/SFV/MD5 succesfully saved!
+9004=Congratulations!
+9005=NFO not complete!
+9006=WARNING
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]

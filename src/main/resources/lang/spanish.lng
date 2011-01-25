@@ -1,0 +1,122 @@
+[GENERAL]
+0001=Lenguaje:
+0002=Español
+0003=Autor:
+0004=Alberto Babiy 2oo3
+0005=Version:
+0006=1.1
+0007=Para adaptar MNB a otro lenguaje solamente hay que editar el archivo *.lng ubicado en la carpeta LANG y hacer la traducción. De ese modo tendrá un entorno de trabajo mucho mas amigable. Esto le puede llevar entre 15-30 minutos. De este modo me estarás ayudando, y yo seré muy feliz :)
+
+[MENU]
+0=&Archivo
+00=&Guardar
+02=&Salir
+1=&Opciones
+10=&Preferencias
+2=A&yuda
+20=A&cerca de...
+
+[TABSHEETS]
+1001=Selección
+1002=Información
+1003=Addons
+1004=Vista Previa
+2001=General
+2002=Lenguaje
+
+[LISTVIEW]
+3001=Archivo
+3002=Autor
+3003=Título
+3004=Album
+3005=Tamaño
+3006=Duración
+3007=Bitrate
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Seleccione Unidad y Carpeta
+4002=Seleccione tipo de archivos
+4003=Lista de Archivos
+4004=Información Adicional
+4005=Lenguaje
+4006=Informaciones Adicionales
+4007=Notas
+4008=Publicidad :)
+4009=Adosar Archivos
+4010=Tapas
+4011=Repost Policy
+
+[BUTTONS]
+5001=Siguiente >
+5002=Siguiente >
+5003=OK
+5004=Cancelar
+5005=Visualizar NFO
+5006=Seleccionar lenguaje
+5007=OK
+5008=Grabar NFO
+
+[LABELS]
+6001=Versión:
+6002=Hz:
+6003=Canales:
+6004=Encoder:
+6005=Promedio Bitrate:
+6006=Calidad:
+6007=Tiempo Total:
+6008=Tamaño Total:
+6009=Año:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Lenguaje Seleccionado
+6014=Genre:
+6015=Origen del Rip:
+6016=Ripper:
+6017=CD/DVD modelo:
+6018=Rippeado por:
+6019=Fecha de Ripp:
+6020=Posteado por:
+6021=Fecha del Post:
+6022=Información:
+6023=Server News:
+6024=Grupo:
+6025=Nombres:
+6026=Carpeta por Defecto:
+6027=Grupos Elegidos:
+6028=Write anything you want... ;)
+
+[CHECKBOXES]
+7001=Adicionar notas
+7002=Adicionar Publicidad
+7003=Checksums (*.sfv/*.md5)
+7004=Playlist (*.pls)
+7005=Playlist (*.m3u)
+7006=Front
+7007=Back
+7008=CD
+7009=Estilo de Menu XP
+7010=Generar checksums
+7011=Artistas Varios
+7012=NMR (No Mi Rip)
+7013=Add bitrate to every file
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Opciones
+8002=Acerca de
+8003=Espere por favor...
+
+[TEXTS]
+9001=NFO not saved!
+9002=NFO saved!
+9003=NFO/M3U/PLS/SFV/MD5 succesfully saved!
+9004=Congratulations!
+9005=NFO not complete!
+9006=WARNING
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]

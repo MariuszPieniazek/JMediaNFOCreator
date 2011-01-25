@@ -1,0 +1,120 @@
+[GENERAL]
+0001=Language:
+0002=Greek
+0003=Author:
+0004=Infinity
+0005=Version:
+0006=1.2
+0007=To adapt MNB to another language only the *.lng file in directory LANG has to be translated. For a native speaker of the language this will take 15-30 minutes. If you want to help me, I will be happy :) Correct my bugs, please.
+
+[MENU]
+0=&File
+00=&Save
+02=&Exit
+1=&Options
+10=&Preferences
+2=&Help
+20=&About...
+
+[TABSHEETS]
+1001=Επιλογή
+1002=Πληροφορίες
+1003=Πρόσθετα
+1004=Προεπισκόπηση
+2001=Γενικά
+2002=Γλώσσα
+
+[LISTVIEW]
+3001=File
+3002=Artist
+3003=Title
+3004=Album
+3005=Filesize
+3006=Duration
+3007=Bitrate
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Select disk and directory
+4002=Select filetypes
+4003=Filelist
+4004=Additional information
+4005=Language
+4006=Additional information
+4007=Notes
+4008=Ads :)
+4009=Attach files
+4010=Covers
+
+[BUTTONS]
+5001=Επόμενο >
+5002=Επόμενο >
+5003=OK
+5004=’κυρο
+5005=Κατάδειξη NFO
+5006=Επιλογή γλώσσας
+5007=OK
+5008=Αποθήκευση NFO
+
+[LABELS]
+6001=Version:
+6002=Hz:
+6003=Channels:
+6004=Encoder:
+6005=Average bitrate:
+6006=Quality:
+6007=Total time:
+6008=Total size:
+6009=Year:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Selected language
+6014=Genre:
+6015=Source:
+6016=Ripper:
+6017=CD/DVD model:
+6018=Ripped by:
+6019=Ripdate:
+6020=Posted by:
+6021=Post date:
+6022=Information:
+6023=Newsserver:
+6024=Group:
+6025=Filenames:
+6026=Default directory:
+6027=Selected groups:
+
+[CHECKBOXES]
+7001=Προσθήκη σημειώσεις
+7002=Add Ads
+7003=Checksums (*.sfv/*.md5)
+7004=Λίστα αναπαραγωγής (*.pls)
+7005=Λίστα αναπαραγωγής (*.m3u)
+7006=Εμπρός
+7007=Πίσω
+7008=CD
+7009=Μενού τύπου XP
+7010=Δημιουργία checksums
+7011=Διάφοροι καλλιτέχνες
+7012=NMR (όχι δικό μου Rip)
+7013=Ένδειξη bitrate σε κάθε αρχείο
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Επιλογές
+8002=Περί
+8003=Παρακαλώ περιμένετε...
+
+[TEXTS]
+9001=NFO not saved!
+9002=NFO saved!
+9003=NFO/M3U/PLS/SFV/MD5 succesfully saved!
+9004=Congratulations!
+9005=NFO not complete!
+9006=WARNING
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]

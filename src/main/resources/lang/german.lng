@@ -1,0 +1,122 @@
+[GENERAL]
+0001=Sprache:
+0002=Deutsch
+0003=Autor:
+0004=WellingaDaDon
+0005=Version:
+0006=1.15
+0007=Um MNB an eine andere Sprache anzupassen, muß nur die *.lng Datei im /LANG/ Verzeichnis übersetzt werden. Für einen Muttersprachler ist das in 15-30 Minuten erledigt. Wenn Du mir helfen willst, nur zu :)
+
+[MENU]
+0=&Datei
+00=&Speichern
+02=&Beenden
+1=&Optionen
+10=&Einstellungen
+2=&Hilfe
+20=&Über...
+
+[TABSHEETS]
+1001=Auswahl
+1002=Informationen
+1003=Add-Ons
+1004=Vorschau
+2001=Allgemein
+2002=Sprache
+
+[LISTVIEW]
+3001=Datei
+3002=Autor
+3003=Titel
+3004=Album
+3005=Länge
+3006=Dauer
+3007=Bitrate
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Laufwerk und Verzeichnis auswählen
+4002=Dateityp wählen
+4003=Dateiliste
+4004=Zusätzliche Informationen
+4005=Sprache
+4006=Zusätzliche Informationen
+4007=Anmerkungen
+4008=Werbung :)
+4009=Dateien hinzufügen
+4010=Cover
+4011=Repost Policy
+
+[BUTTONS]
+5001=Weiter >
+5002=Weiter >
+5003=OK
+5004=Abbrechen
+5005=NFO anzeigen
+5006=Sprache wählen
+5007=OK
+5008=NFO speichern
+
+[LABELS]
+6001=Version:
+6002=Hz:
+6003=Kanäle:
+6004=Encoder:
+6005=Durchschn. Bitrate:
+6006=Qualität:
+6007=Gesamtzeit:
+6008=Gesamtgröße:
+6009=Jahr:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Gewählte Sprache
+6014=Genre:
+6015=Quelle:
+6016=Ripper:
+6017=CD/DVD Modell:
+6018=Gerippt von:
+6019=Ripdatum:
+6020=Geposted von:
+6021=Postdatum:
+6022=Informationen:
+6023=Newsserver:
+6024=Gruppe:
+6025=Dateiname:
+6026=Standardverzeichnis:
+6027=Ausgewählte Gruppen:
+6028=Schreib was du willst... ;)
+
+[CHECKBOXES]
+7001=...hinzufügen
+7002=Werbung hinzufügen
+7003=Prüfsummen (*.sfv/*.md5)
+7004=Playlist (*.pls)
+7005=Playlist (*.m3u)
+7006=Vorderseite
+7007=Hinterseite
+7008=CD
+7009=XP-Stil Menü
+7010=Prüfsummen generieren
+7011=Versch. Künstler
+7012=NMR (Nicht Mein Rip)
+7013=Bitrate zu jeder Datei hinzufügen
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Optionen
+8002=Über
+8003=Bitte warten...
+
+[TEXTS]
+9001=NFO nicht gespeichert!
+9002=NFO gespeichert!
+9003=NFO/M3U/PLS/SFV/MD5 erfolgreich gespeichert!
+9004=Glückwunsch!
+9005=NFO nicht vollständig!
+9006=WARNUNG
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]

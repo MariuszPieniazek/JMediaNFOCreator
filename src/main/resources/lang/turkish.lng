@@ -1,0 +1,124 @@
+[GENERAL]
+0001=Language:
+0002=Turkish
+0003=Author:
+0004=Umut
+0005=Version:
+0006=1.15
+0007=To adapt MNB to another language only the *.lng file in directory LANG has to be translated. For a native speaker of the language this will take 15-30 minutes. If you want to help me, I will be happy :) Sorry for my english. Correct my bugs, please.
+
+[MENU]
+0=&Dosya	
+00=&Kaydet
+02=&Çýk
+1=&Seçenekler
+10=&Tercihler
+2=&Yardým
+20=&Hakkýnda...
+
+[TABSHEETS]
+1001=Seçim
+1002=Bilgi
+1003=Diðer
+1004=Ön Ýzleme
+2001=Genel
+2002=Dil
+
+[LISTVIEW]
+3001=Dosya
+3002=Yazar
+3003=Baþlýk
+3004=Albüm
+3005=Boyut
+3006=Süre
+3007=Bitrate
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Disk ve Dizin Seçin
+4002=Dosya Tiplerini Seçin
+4003=Liste
+4004=Ek bilgi
+4005=Dil
+4006=Ek bilgi
+4007=Not
+4008=Reklamlar :)
+4009=Eklenecek Dosyalar
+4010=Kapak
+4011=Repost Policy
+
+[BUTTONS]
+5001=Ýleri >
+5002=Ýleri >
+5003=Tamam
+5004=Ýptal
+5005=NFO Göster
+5006=Dil seçin
+5007=Tamam
+5008=NFO Kaydet
+
+[LABELS]
+6001=Kodlayýcý:
+6002=Hz:
+6003=Kanal:
+6004=Kodlayan:
+6005=Ortalama bitrate:
+6006=Kalite:
+6007=Toplam süre:
+6008=Toplam boyut:
+6009=Yýl:
+6010=ID3  Etiket 1:
+6011=ID3  Etiket 2:
+6012=APE Etiketi:
+6013=Seçilen dil
+6014=Tarz:
+6015=Kaynak:
+6016=Rip programý:
+6017=CD/DVD model:
+6018=Ripleyen:
+6019=Rip Tarihi:
+6020=Gönderen:
+6021=Gönderme Tarihi:
+6022=Bilgi:
+6023=Haber Kanalý:
+6024=Grup:
+6025=NFO adý:
+6026=Varsayýlan dizin:
+6027=Seçilen gruplar:
+6028=Ýstediðinizi yazabilirsiniz... ;)
+
+
+[CHECKBOXES]
+7001=Not ekle
+7002=Reklam ekle
+7003=Doðrulama (*.sfv/*.md5)
+7004=Playlist (*.pls)
+7005=Playlist (*.m3u)
+7006=Ön
+7007=Arka
+7008=CD
+7009=XP stili menü
+7010=Doðrulama Dosyasý Yap
+7011=Farklý Sanatçýlar
+7012=NMR (Benim ripim deðil)
+7013=Her dosyaya bitrate ekle
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Seçenekler
+8002=Hakkýnda
+8003=Lütfen bekleyin...
+
+[TEXTS]
+9001=NFO kaydedilmedi!
+9002=NFO kaydedildi!
+9003=NFO/M3U/PLS/SFV/MD5 kaydedildi!
+9004=Tebrikler!
+9005=NFO tamamlanmadý!
+9006=UYARI
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+
+[END]

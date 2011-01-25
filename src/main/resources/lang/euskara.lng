@@ -1,0 +1,122 @@
+[GENERAL]
+0001=Hizkuntza:
+0002=Euskara (Basque)
+0003=Egilea:
+0004=PaSKuaL'00
+0005=Bertsioa:
+0006=1.14
+0007=MNB beste hizkuntza batera egokitzeko, LANG karpetako *.lng fitxeroa bakarrik aldatu behar da.
+
+[MENU]
+0=&Artxiboa
+00=&Gorde
+02=&Irten
+1=&Aukerak
+10=&Hobespenak
+2=&Laguntza
+20=...-i &buruz
+
+[TABSHEETS]
+1001=Hautaketa
+1002=Informazioa
+1003=Gehigarriak
+1004=Aurreikusketa
+2001=Orokorra
+2002=Hizkuntza
+
+[LISTVIEW]
+3001=Artxiboa
+3002=Taldea/Artista
+3003=Izenburua
+3004=Diska
+3005=Tamaina
+3006=Iraupena
+3007=Bitrate-a
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Diskoa eta karpeta aukeratu
+4002=Artxibo tipoak aukeratu
+4003=Artxibo zerrenda
+4004=Informazio gehigarria
+4005=Hizkuntza
+4006=Informazio gehigarriak
+4007=Notak
+4008=Iragarkia :)
+4009=Artxiboak gehitu
+4010=Azalak
+4011=Repost Policy
+
+[BUTTONS]
+5001=Hurrengoa >
+5002=Hurrengoa >
+5003=Bai
+5004=Ez
+5005=NFO-a erakutsi
+5006=Hizkuntza aukeratu
+5007=Bai
+5008=NFO-a gorde
+
+[LABELS]
+6001=Bertsioa:
+6002=Hz-ak:
+6003=Kanalak:
+6004=Kodifikatzailea:
+6005=Bitrate-a:
+6006=Kalitatea:
+6007=Guztizko denbora:
+6008=Guztizko tamaina:
+6009=Urtea:
+6010=ID3 Etiketa 1:
+6011=ID3 Etiketa 2:
+6012=APE Etiketa:
+6013=Aukeratutako hizkuntza
+6014=Genre:
+6015=Iturria:
+6016=Programa:
+6017=CD/DVD:
+6018=Ripper-a:
+6019=Grabazio data:
+6020=Idatzia:
+6021=Idazketa data:
+6022=Informazioa:
+6023=Berri serbitzaria:
+6024=Taldea:
+6025=Artxibo izenak:
+6026=Lehenetsitako karpeta:
+6027=Aukeratutako taldeak:
+6028=Write anything you want... ;)
+
+[CHECKBOXES]
+7001=Notak gehitu
+7002=Iragarkiak gehitu
+7003=Checksum-ak (*.sfv/*.md5)
+7004=Mp3 zerrenda (*.pls)
+7005=Mp3 zerrenda (*.m3u)
+7006=Aurrea
+7007=Atzea
+7008=CD-a
+7009=XP estiloko menua
+7010=Checksum-a egin
+7011=Artista Askoren Artean
+7012=EdNR (Ez da Nire Rip-a)
+7013=Bitrate-a gehitu artxibo guztiei
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Aukerak
+8002=-i buruz
+8003=Itxaron mesedez...
+
+[TEXTS]
+9001=NFO not saved!
+9002=NFO saved!
+9003=NFO/M3U/PLS/SFV/MD5 succesfully saved!
+9004=Congratulations!
+9005=NFO not complete!
+9006=WARNING
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]

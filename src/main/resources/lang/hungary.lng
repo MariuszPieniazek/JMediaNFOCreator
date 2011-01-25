@@ -1,0 +1,123 @@
+[GENERAL]
+0001=Nyelv:
+0002=Hungary
+0003=Szerzõ:
+0004=Goldshield
+0005=Version:
+0006=1.15
+0007=To adapt MNB to another language only the *.lng file in directory LANG has to be translated. For a native speaker of the language this will take 15-30 minutes. If you want to help me, I will be happy :) Sorry for my english. Correct my bugs, please.
+
+[MENU]
+0=&Fájl
+00=&Mentés
+02=&Kilép
+1=&Opciók
+10=&Beállítások
+2=&Súgó
+20=&Névjegy...
+
+[TABSHEETS]
+1001=Választ
+1002=Fájl infó
+1003=Bõvebben
+1004=Elõnézet
+2001=Általános
+2002=Nyelv
+
+[LISTVIEW]
+3001=Fájl
+3002=Elõadó
+3003=Cím
+3004=Album
+3005=Méret
+3006=Tartam
+3007=Bitráta
+3008=SFV/MD5
+
+[GROUPBOXES]
+4001=Meghajtó és mappa választás
+4002=Fájl típús választás
+4003=Fájl lista
+4004=További információ
+4005=Nyelv
+4006=További információ
+4007=Megjegyzés
+4008=Apróhirdetés :)
+4009=Fájl hozzáfûzés
+4010=Borító
+4011=Repost Policy
+
+[BUTTONS]
+5001=Következõ >
+5002=Következõ >
+5003=Igen
+5004=Mégsem
+5005=NFO elõnézet
+5006=Válassz nyelvet
+5007=Igen
+5008=NFO mentése
+
+[LABELS]
+6001=Kodek:
+6002=Hz/Bit:
+6003=Csatorna:
+6004=Kódoló:
+6005=Átlagos bitráta:
+6006=Minõség:
+6007=Össz. idõ:
+6008=Teljes méret:
+6009=Év:
+6010=ID3 Tag 1:
+6011=ID3 Tag 2:
+6012=APE Tag:
+6013=Választott nyelv
+6014=Stílus:
+6015=Forrás:
+6016=Rip program:
+6017=CD/DVD típúsa:
+6018=Rippelte:
+6019=Rip idõpont:
+6020=Küldte:
+6021=Küldés ideje:
+6022=Információ:
+6023=Hírszerver:
+6024=Csoport:
+6025=NFO fájl neve:
+6026=Alapértelmezett meghajtó:
+6027=Csoport választás:
+6028=Írhatsz ide kiegészítõ megjegyzést... ;)
+
+
+[CHECKBOXES]
+7001=Megjegyz. hozzáfûzése
+7002=Hirdetést hozzáad
+7003=Ellenõrzés (*.sfv/*.md5)
+7004=Playlist (*.pls)
+7005=Playlist (*.m3u)
+7006=Front
+7007=Hátoldal
+7008=CD
+7009=XP menû-stílús
+7010=Ellenõrzés generálás
+7011=Különféle elõadók
+7012=NMR (Nem saját RIP)
+7013=Bitráta hozzáadása minden fájlhoz
+7014=Read Subdirectories
+7015=Save SFV/MD5/M3U/PLS with Unicode filenames
+
+[FORMS]
+8001=Opciók
+8002=Névjegy
+8003=Kérlek várj...
+
+[TEXTS]
+9001=NFO not saved!
+9002=NFO saved!
+9003=NFO/M3U/PLS/SFV/MD5 succesfully saved!
+9004=Congratulations!
+9005=NFO not complete!
+9006=WARNING
+9007=Different filetypes in selected directory!
+9008=Using filetype with maximum number of files:
+
+[END]
