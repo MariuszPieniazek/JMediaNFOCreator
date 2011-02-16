@@ -1,22 +1,20 @@
 package pl.JMediaNFOCreator;
 
 import java.io.File;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 
-public class DirList {
+public class DirList{
 	
-	public String[] getDirList(String fileType, String pathToDirectory) {
+	public ArrayList<String> getDirList(String[] fileTypes, String pathToDirectory) {
 		File path = new File(pathToDirectory);
-		String[] list;
-		if(fileType.isEmpty()) list = path.list(); 
-		else list = path.list(new DirFilter(fileType));
-		Arrays.sort(list, String.CASE_INSENSITIVE_ORDER);
-		return list;		
-	}
-	
-	public int getNumbersOfFiles(String[] filterFiles) {
-		int countFiles = filterFiles.length;
-		return countFiles;
+		ArrayList<String> listOfFilterFiles = new ArrayList<String>();
+		for (int i = 0; i < fileTypes.length; i++) {
+			String[] listOfAllFiles = path.list(new DirFilter(fileTypes[i]));
+			for (int j = 0; j < listOfAllFiles.length; j++) listOfFilterFiles.add(listOfAllFiles[j]);	
+		}
+		Collections.sort(listOfFilterFiles);
+		return listOfFilterFiles;		
 	}
 	
 	public Long getFileSize(String filename) {

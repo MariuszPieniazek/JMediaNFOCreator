@@ -45,12 +45,13 @@ public class FilesOperations {
 			if(userHome == null) {
 		        throw new IllegalStateException("user.home==null");
 		    }
-			File settingsDirectory = new File(new File(userHome), ".jMusicNFOBuilder");
+			File settingsDirectory = new File(new File(userHome), "." + JMediaNFOCreator.PROGRAM_NAME);
 			if(!settingsDirectory.exists()) {
 				settingsDirectory.mkdir();
-		        if(!settingsDirectory.mkdir()) {
-		            throw new IllegalStateException(settingsDirectory.toString());
-		        }
+				File configurationFile = new File(settingsDirectory + File.separator + cfgFilename);
+		        if (!configurationFile.exists()) {
+					createCfgFile(cfgFilename);
+				}
 			}
 			Properties property = new Properties();
 			FileInputStream fileInputStream = new FileInputStream(settingsDirectory+File.separator+cfgFilename); 
@@ -59,8 +60,7 @@ public class FilesOperations {
 			fileInputStream.close();
 			return cfgValueProperty;
 		} catch (FileNotFoundException e) {
-			createCfgFile(cfgFilename);
-			return cfgValueProperty = "";
+			return null;
 		} catch (InvalidPropertiesFormatException e) {
 			return cfgValueProperty = "";
 		} catch (IOException e) {
@@ -74,12 +74,15 @@ public class FilesOperations {
 			if(userHome == null) {
 		        throw new IllegalStateException("user.home==null");
 		    }
-			File settingsDirectory = new File(new File(userHome), ".jMusicNFOBuilder");
+			File settingsDirectory = new File(new File(userHome), "." + JMediaNFOCreator.PROGRAM_NAME);
 			if(!settingsDirectory.exists()) {
 				settingsDirectory.mkdir();
 		        if(!settingsDirectory.mkdir()) {
 		            throw new IllegalStateException(settingsDirectory.toString());
 		        }
+			}
+			if (settingsDirectory+File.separator+cfgFileName == null ) {
+				createCfgFile(cfgFileName);
 			}
 			Properties properties = new Properties();
 			FileInputStream fileInputStream = new FileInputStream(settingsDirectory+File.separator+cfgFileName); 
@@ -100,7 +103,7 @@ public class FilesOperations {
 				properties.setProperty(key, value);
 			}
 			properties.setProperty(cfgKeyProperty, cfgValueProperty); 
-			properties.storeToXML(fileOutputStream, "Konfiguracja programu JavaMusicNFOBuilder");
+			properties.storeToXML(fileOutputStream, "Konfiguracja programu " + JMediaNFOCreator.PROGRAM_NAME);
 			fileOutputStream.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("Brak pliku");
@@ -117,14 +120,14 @@ public class FilesOperations {
 			if(userHome == null) {
 		        throw new IllegalStateException("user.home==null");
 		    }
-			File settingsDirectory = new File(new File(userHome), ".jMusicNFOBuilder");
+			File settingsDirectory = new File(new File(userHome), "." + JMediaNFOCreator.PROGRAM_NAME);
 			if(!settingsDirectory.exists()) {
 				settingsDirectory.mkdir();
 		        if(!settingsDirectory.mkdir()) {
 		            throw new IllegalStateException(settingsDirectory.toString());
 		        }
-			}
-			File confFile = new File(userHome+File.separator+".jMusicNFOBuilder"+File.separator+cfgFilename);
+			}					
+			File confFile = new File(userHome+File.separator+"." + JMediaNFOCreator.PROGRAM_NAME + File.separator+cfgFilename);
 			if(!confFile.exists()) {
 				confFile.createNewFile();
 				Properties property = new Properties();
@@ -135,7 +138,15 @@ public class FilesOperations {
 				property.setProperty("addbitrate", "0");
 				property.setProperty("saveunicode", "0");
 				property.setProperty("crc", "MD5");
-				property.storeToXML(fileOutputStream, "Konfiguracja programu JavaMusicNFOBuilder");
+				property.setProperty("rippedby", "Nieznany");
+				property.setProperty("postedby", "Nieznany");
+				property.setProperty("notes", "1");
+				property.setProperty("sources", "CD");
+				property.setProperty("VA", "VA");
+				property.setProperty("server", "news4.euro.net");
+				property.setProperty("cd/dvd", "Delta OME-W141");
+				property.setProperty("ripper", "Audiograbber 1.82");
+				property.storeToXML(fileOutputStream, "Konfiguracja programu " + JMediaNFOCreator.PROGRAM_NAME);
 				fileOutputStream.close();
 			}	
 		} catch (FileNotFoundException e) {

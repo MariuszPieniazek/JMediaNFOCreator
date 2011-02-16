@@ -4,7 +4,10 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.util.logging.LogManager;
 
+import org.jaudiotagger.audio.AudioFile;
 import org.jaudiotagger.audio.AudioFileIO;
+import org.jaudiotagger.audio.AudioHeader;
+import org.jaudiotagger.audio.generic.Utils;
 import org.jaudiotagger.audio.mp3.MP3AudioHeader;
 import org.jaudiotagger.audio.mp3.MP3File;
 import org.jaudiotagger.tag.FieldKey;
@@ -19,7 +22,6 @@ public class TagsReader {
 	      
 	    }
 	  }
-
 	
 	public String getTagReader(String pathToFile, FieldKey fieldKey) {
 		String tagReader = null;
@@ -42,14 +44,14 @@ public class TagsReader {
 		String bitRate = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null) {
-				bitRate = mp3AudioHeader.getBitRate();
-				if (mp3AudioHeader.isVariableBitRate() == true) {
+			AudioFile audioFile = AudioFileIO.read(file);
+			AudioHeader audioHeader = audioFile.getAudioHeader();
+			if (audioHeader != null) {
+				bitRate = audioHeader.getBitRate();
+				if (audioHeader.isVariableBitRate() == true) {
 					bitRate = "VBR "+bitRate+" kbit/s";
 				}
-				else if (mp3AudioHeader.isVariableBitRate() == false) {
+				else if (audioHeader.isVariableBitRate() == false) {
 					bitRate = "CBR "+bitRate+" kbit/s";		
 				}
 			}
@@ -80,10 +82,10 @@ public class TagsReader {
 		Boolean variableBitRate = false;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null) {
-				variableBitRate = mp3AudioHeader.isVariableBitRate();
+			AudioFile audioFile = AudioFileIO.read(file);
+			AudioHeader audioHeader = audioFile.getAudioHeader();
+			if (audioHeader != null) {
+				variableBitRate = audioHeader.isVariableBitRate();
 			}
 		}
 		catch (Exception e) {
@@ -96,10 +98,10 @@ public class TagsReader {
 		String sampleRate = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null) {
-				sampleRate = mp3AudioHeader.getSampleRate();
+			AudioFile audioFile = AudioFileIO.read(file);
+			AudioHeader audioHeader = audioFile.getAudioHeader();
+			if (audioHeader != null) {
+				sampleRate = audioHeader.getSampleRate();
 			}
 			else {
 				sampleRate = "-";
@@ -115,10 +117,10 @@ public class TagsReader {
 		String channels = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null) {
-				channels = mp3AudioHeader.getChannels();
+			AudioFile audioFile = AudioFileIO.read(file);
+			AudioHeader audioHeader = audioFile.getAudioHeader();
+			if (audioHeader != null) {
+				channels = audioHeader.getChannels();
 			}
 		}
 		catch (Exception e) {
@@ -131,10 +133,10 @@ public class TagsReader {
 		String format = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null) {
-				format = mp3AudioHeader.getFormat();
+			AudioFile audioFile = AudioFileIO.read(file);
+			AudioHeader audioHeader = audioFile.getAudioHeader();
+			if (audioHeader != null) {
+				format = audioHeader.getFormat();
 			}
 		}
 		catch (Exception e) {
@@ -147,12 +149,13 @@ public class TagsReader {
 		String encoder = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null && mp3AudioHeader.getEncoder() != null && mp3AudioHeader.getEncoder() != "") {
-				encoder = mp3AudioHeader.getEncoder();
-			}
-			else {
+			AudioFile audioFile = AudioFileIO.read(file);
+			if (Utils.getExtension(file).equals("mp3") == true) {
+				MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
+				if (mp3AudioHeader != null && mp3AudioHeader.getEncoder() != null && mp3AudioHeader.getEncoder() != "") {
+					encoder = mp3AudioHeader.getEncoder();
+				}
+			} else {
 				encoder = "-";
 			}
 		}
@@ -166,10 +169,10 @@ public class TagsReader {
 		Long bitrateAsNumer = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null) {
-				bitrateAsNumer = mp3AudioHeader.getBitRateAsNumber();
+			AudioFile audioFile = AudioFileIO.read(file);
+			AudioHeader audioHeader = audioFile.getAudioHeader();
+			if (audioHeader != null) {
+				bitrateAsNumer = audioHeader.getBitRateAsNumber();
 			}
 		}
 		catch (Exception e) {
@@ -178,31 +181,34 @@ public class TagsReader {
 		return bitrateAsNumer;
 	}
 	
-	public Double getPreciseTrackLength(String pathToFile) {
-		Double preciseTrackLength = null;
+	public int getTrackLength(String pathToFile) {
+		int trackLength = 0;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			MP3AudioHeader mp3AudioHeader = (MP3AudioHeader)audioFile.getAudioHeader();
-			if (mp3AudioHeader != null) {
-				preciseTrackLength = mp3AudioHeader.getPreciseTrackLength();
+			AudioFile audioFile = AudioFileIO.read(file);
+			AudioHeader audioHeader = audioFile.getAudioHeader();
+			if (audioHeader != null) {
+				trackLength = audioHeader.getTrackLength();
 			}
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-		return preciseTrackLength;
+		return trackLength;
 	}
 	
 	public String getV2TagId(String pathToFile) {
 		String v2TagId = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			if (audioFile.getID3v2Tag() != null) {
-				v2TagId  = audioFile.getID3v2Tag().getIdentifier();
+			if (Utils.getExtension(file).equals("mp3") == true) {
+				MP3File audioFile = (MP3File)AudioFileIO.read(file);
+				if (audioFile.getID3v2Tag() != null) {
+					v2TagId  = audioFile.getID3v2Tag().getIdentifier();
+				}
+			} else {
+				v2TagId  = "-";
 			}
-			else v2TagId  = "-";
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -214,17 +220,19 @@ public class TagsReader {
 		String v1TagId = null;
 		try {
 			File file = new File(pathToFile);
-			MP3File audioFile = (MP3File)AudioFileIO.read(file);
-			if (audioFile.getID3v1Tag() != null) {
-				v1TagId  = audioFile.getID3v1Tag().getIdentifier();
+			if (Utils.getExtension(file).equals("mp3") == true) {
+				MP3File audioFile = (MP3File)AudioFileIO.read(file);
+				if (audioFile.getID3v1Tag() != null) {
+					v1TagId  = audioFile.getID3v1Tag().getIdentifier();
+				}
+			} else {
+					v1TagId  = "-";
 			}
-			else v1TagId  = "-";
-				
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
 		return v1TagId;
-	}
+	}		
 }
 
